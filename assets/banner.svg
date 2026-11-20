@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="MockView. Practice technical interviews out loud with an AI interviewer.">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3B"/><stop offset="1" stop-color="#16395D"/></linearGradient></defs>
+<rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+<g fill="#8FB6D9" opacity=".25"><circle cx="1120" cy="30" r="2.5"/><circle cx="1144" cy="30" r="2.5"/><circle cx="1168" cy="30" r="2.5"/><circle cx="1192" cy="30" r="2.5"/><circle cx="1216" cy="30" r="2.5"/><circle cx="1240" cy="30" r="2.5"/><circle cx="1120" cy="54" r="2.5"/><circle cx="1144" cy="54" r="2.5"/><circle cx="1168" cy="54" r="2.5"/><circle cx="1192" cy="54" r="2.5"/><circle cx="1216" cy="54" r="2.5"/><circle cx="1240" cy="54" r="2.5"/><circle cx="1120" cy="78" r="2.5"/><circle cx="1144" cy="78" r="2.5"/><circle cx="1168" cy="78" r="2.5"/><circle cx="1192" cy="78" r="2.5"/><circle cx="1216" cy="78" r="2.5"/><circle cx="1240" cy="78" r="2.5"/><circle cx="1120" cy="102" r="2.5"/><circle cx="1144" cy="102" r="2.5"/><circle cx="1168" cy="102" r="2.5"/><circle cx="1192" cy="102" r="2.5"/><circle cx="1216" cy="102" r="2.5"/><circle cx="1240" cy="102" r="2.5"/><circle cx="1120" cy="126" r="2.5"/><circle cx="1144" cy="126" r="2.5"/><circle cx="1168" cy="126" r="2.5"/><circle cx="1192" cy="126" r="2.5"/><circle cx="1216" cy="126" r="2.5"/><circle cx="1240" cy="126" r="2.5"/></g>
+<g transform="translate(70,70) scale(1.1)"><rect x="-14" y="-14" width="228" height="208" rx="26" fill="#F8F4EC"/>
+  <defs>
+    <linearGradient id="mv-side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#376A90"/>
+      <stop offset="1" stop-color="#0B1F3B"/>
+    </linearGradient>
+    <linearGradient id="mv-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4C992" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F4C992" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <!-- M monogram: two navy peaks with slate-blue lower legs -->
+  <path d="M10 28 L58 8 L100 40 L142 8 L190 28 L190 52 L142 36 L100 70 L58 36 L10 52 Z" fill="#0B1F3B"/>
+  <path d="M10 52 L58 36 L58 150 L10 128 Z" fill="url(#mv-side)"/>
+  <path d="M190 52 L142 36 L142 150 L190 128 Z" fill="url(#mv-side)"/>
+  <!-- light cone -->
+  <path d="M100 70 L132 140 L68 140 Z" fill="url(#mv-light)"/>
+  <circle cx="100" cy="66" r="3.5" fill="#0B1F3B"/>
+  <!-- armchair -->
+  <g fill="#0B1F3B">
+    <rect x="84" y="102" width="32" height="26" rx="8"/>
+    <rect x="76" y="112" width="12" height="22" rx="5"/>
+    <rect x="112" y="112" width="12" height="22" rx="5"/>
+    <rect x="82" y="124" width="36" height="10" rx="4"/>
+    <rect x="86" y="134" width="3" height="10"/>
+    <rect x="111" y="134" width="3" height="10"/>
+  </g>
+</g>
+<text x="370" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F8F4EC">Mock<tspan fill="#8FB6D9">View</tspan></text>
+<text x="372" y="198" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" letter-spacing="6" fill="#F4C992">AI MOCK INTERVIEWS</text>
+<text x="372" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#F8F4EC">Practice technical interviews out loud.</text>
+<text x="372" y="288" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#8FB6D9">64 specializations · 10 questions + follow-ups · a clear report on what to fix first</text>
+<text x="372" y="322" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8FB6D9" opacity=".85">A desktop app that runs on your own computer with your own free Gemini key.</text>
+</svg>
