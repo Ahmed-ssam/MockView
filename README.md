@@ -4,7 +4,7 @@
 
 <br>
 
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-F4C992?style=flat-square&labelColor=0B1F3B)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-F4C992?style=flat-square&labelColor=0B1F3B)
 ![Stack](https://img.shields.io/badge/Stack-Electron%20%2B%20Next.js%20%2B%20FastAPI-8FB6D9?style=flat-square&labelColor=0B1F3B)
 ![Fields](https://img.shields.io/badge/Specializations-64-F4C992?style=flat-square&labelColor=0B1F3B)
 ![Questions](https://img.shields.io/badge/Questions-10%20%2B%20follow--ups-8FB6D9?style=flat-square&labelColor=0B1F3B)
@@ -101,7 +101,7 @@ Four interviewer roles, shown by their role only: **Engineering Manager**, **Sta
 | Option | How |
 |---|---|
 | **Windows** | Download [`MockView_installer.exe`](../../releases/latest/download/MockView_installer.exe), double-click it, choose the install folder and wait for the progress bar. A **MockView** icon appears on your desktop and in the Start menu |
-| **macOS** | Download `MockView.dmg` from [Releases](../../releases/latest) and drag MockView to Applications. On first launch, right-click the app and choose Open |
+| **macOS** | No installer yet. Run from source (see *For developers*) |
 | **Linux** | Download `MockView.AppImage` from [Releases](../../releases/latest), make it executable and double-click it |
 
 The installers are **not code-signed**, so Windows may show *Windows protected your PC*. Choose **More info**, then **Run anyway**. MockView has its own window and taskbar icon and does not open in a browser.
@@ -135,7 +135,7 @@ Your data and key are stored in `%APPDATA%\MockView` (Windows), `~/Library/Appli
 
 ## Honest status
 
-Verified by the author: backend tests (SQLite and PostgreSQL), frontend tests, type-check, production build, and a Playwright end-to-end and axe accessibility suite. **Not verified by the author:** real Gemini calls, real microphones and voices, the macOS build, expert review of the question content for all 64 specializations, and legal review of the privacy and terms pages. The logo is an SVG recreation of the brand artwork.
+Verified by the author: backend tests (SQLite and PostgreSQL), frontend tests, type-check, production build, and a Playwright end-to-end and axe accessibility suite. **Not verified by the author:** real Gemini calls, real microphones and voices, the Linux build, expert review of the question content for all 64 specializations, and legal review of the privacy and terms pages. The logo is an SVG recreation of the brand artwork.
 
 ## For developers
 
@@ -148,7 +148,7 @@ You need **Python 3.10+**, **Node.js 20+** and **Chrome or Edge**.
 The first run installs and builds everything, then opens http://localhost:3000. Local mode (`LOCAL_MODE=1`, set by the scripts) has no accounts and no usage limits, and only answers requests addressed to localhost.
 
 ### Build the desktop installer
-Push a tag such as `v1.0.0`, or run **Actions → release → Run workflow**. `.github/workflows/release.yml` builds the installers with electron-builder on GitHub's free runners. To build locally:
+Push a tag such as `v1.0.0`, or run **Actions → release → Run workflow**. `.github/workflows/release.yml` builds the Windows and Linux installers with electron-builder on GitHub's free runners. To build locally:
 
 ```bash
 cd frontend && NEXT_PUBLIC_API_URL=http://localhost:8000 npm run build

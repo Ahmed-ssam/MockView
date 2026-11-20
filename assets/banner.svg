@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="MockView. Practice technical interviews out loud with an AI interviewer.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-label="MockView. Practice technical interviews out loud with an AI interviewer.">
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3B"/><stop offset="1" stop-color="#16395D"/></linearGradient></defs>
-<rect width="1280" height="360" rx="24" fill="url(#bg)"/>
-<g fill="#8FB6D9" opacity=".25"><circle cx="1120" cy="30" r="2.5"/><circle cx="1144" cy="30" r="2.5"/><circle cx="1168" cy="30" r="2.5"/><circle cx="1192" cy="30" r="2.5"/><circle cx="1216" cy="30" r="2.5"/><circle cx="1240" cy="30" r="2.5"/><circle cx="1120" cy="54" r="2.5"/><circle cx="1144" cy="54" r="2.5"/><circle cx="1168" cy="54" r="2.5"/><circle cx="1192" cy="54" r="2.5"/><circle cx="1216" cy="54" r="2.5"/><circle cx="1240" cy="54" r="2.5"/><circle cx="1120" cy="78" r="2.5"/><circle cx="1144" cy="78" r="2.5"/><circle cx="1168" cy="78" r="2.5"/><circle cx="1192" cy="78" r="2.5"/><circle cx="1216" cy="78" r="2.5"/><circle cx="1240" cy="78" r="2.5"/><circle cx="1120" cy="102" r="2.5"/><circle cx="1144" cy="102" r="2.5"/><circle cx="1168" cy="102" r="2.5"/><circle cx="1192" cy="102" r="2.5"/><circle cx="1216" cy="102" r="2.5"/><circle cx="1240" cy="102" r="2.5"/><circle cx="1120" cy="126" r="2.5"/><circle cx="1144" cy="126" r="2.5"/><circle cx="1168" cy="126" r="2.5"/><circle cx="1192" cy="126" r="2.5"/><circle cx="1216" cy="126" r="2.5"/><circle cx="1240" cy="126" r="2.5"/></g>
-<g transform="translate(70,70) scale(1.1)"><rect x="-14" y="-14" width="228" height="208" rx="26" fill="#F8F4EC"/>
+<rect width="1280" height="460" rx="24" fill="url(#bg)"/>
+<g fill="#8FB6D9" opacity=".25"><circle cx="40" cy="34" r="2.5"/><circle cx="64" cy="34" r="2.5"/><circle cx="88" cy="34" r="2.5"/><circle cx="112" cy="34" r="2.5"/><circle cx="136" cy="34" r="2.5"/><circle cx="40" cy="58" r="2.5"/><circle cx="64" cy="58" r="2.5"/><circle cx="88" cy="58" r="2.5"/><circle cx="112" cy="58" r="2.5"/><circle cx="136" cy="58" r="2.5"/><circle cx="40" cy="82" r="2.5"/><circle cx="64" cy="82" r="2.5"/><circle cx="88" cy="82" r="2.5"/><circle cx="112" cy="82" r="2.5"/><circle cx="136" cy="82" r="2.5"/><circle cx="40" cy="106" r="2.5"/><circle cx="64" cy="106" r="2.5"/><circle cx="88" cy="106" r="2.5"/><circle cx="112" cy="106" r="2.5"/><circle cx="136" cy="106" r="2.5"/><circle cx="1120" cy="34" r="2.5"/><circle cx="1144" cy="34" r="2.5"/><circle cx="1168" cy="34" r="2.5"/><circle cx="1192" cy="34" r="2.5"/><circle cx="1216" cy="34" r="2.5"/><circle cx="1120" cy="58" r="2.5"/><circle cx="1144" cy="58" r="2.5"/><circle cx="1168" cy="58" r="2.5"/><circle cx="1192" cy="58" r="2.5"/><circle cx="1216" cy="58" r="2.5"/><circle cx="1120" cy="82" r="2.5"/><circle cx="1144" cy="82" r="2.5"/><circle cx="1168" cy="82" r="2.5"/><circle cx="1192" cy="82" r="2.5"/><circle cx="1216" cy="82" r="2.5"/><circle cx="1120" cy="106" r="2.5"/><circle cx="1144" cy="106" r="2.5"/><circle cx="1168" cy="106" r="2.5"/><circle cx="1192" cy="106" r="2.5"/><circle cx="1216" cy="106" r="2.5"/></g>
+<g transform="translate(580,40) scale(.6)"><rect x="-14" y="-14" width="228" height="208" rx="26" fill="#F8F4EC"/>
   <defs>
     <linearGradient id="mv-side" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#376A90"/>
@@ -30,9 +30,9 @@
     <rect x="111" y="134" width="3" height="10"/>
   </g>
 </g>
-<text x="370" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F8F4EC">Mock<tspan fill="#8FB6D9">View</tspan></text>
-<text x="372" y="198" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" letter-spacing="6" fill="#F4C992">AI MOCK INTERVIEWS</text>
-<text x="372" y="248" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#F8F4EC">Practice technical interviews out loud.</text>
-<text x="372" y="288" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#8FB6D9">64 specializations · 10 questions + follow-ups · a clear report on what to fix first</text>
-<text x="372" y="322" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8FB6D9" opacity=".85">A desktop app that runs on your own computer with your own free Gemini key.</text>
+<text x="640" y="246" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#F8F4EC">Mock<tspan fill="#8FB6D9">View</tspan></text>
+<text x="640" y="284" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" letter-spacing="6" fill="#F4C992">AI MOCK INTERVIEWS</text>
+<text x="640" y="340" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#F8F4EC">Practice technical interviews out loud.</text>
+<text x="640" y="383" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#8FB6D9">64 specializations · 10 questions + follow-ups · a clear report on what to fix first</text>
+<text x="640" y="420" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8FB6D9" opacity=".85">A desktop app that runs on your own computer with your own free Gemini key.</text>
 </svg>
