@@ -14,7 +14,6 @@ jobs:
       matrix:
         include:
           - { os: windows-latest, name: windows, flag: --win }
-          - { os: macos-14, name: macos, flag: --mac }
           - { os: ubuntu-22.04, name: linux, flag: --linux }
     runs-on: ${{ matrix.os }}
     defaults: { run: { shell: bash } }
