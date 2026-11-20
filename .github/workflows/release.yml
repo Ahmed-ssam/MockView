@@ -1,0 +1,62 @@
+name: release
+# Builds the MockView desktop installers and attaches them to a GitHub Release.
+#   Windows: MockView-Setup-<version>.exe  (installs, adds a MockView icon to the Desktop and Start menu)
+#   macOS:   MockView-<version>.dmg (drag to Applications)   Linux: MockView-<version>.AppImage
+# Trigger: push a tag like v1.0.0 (or run manually from the Actions tab).
+on:
+  push: { tags: ["v*"] }
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: windows-latest, name: windows, flag: --win }
+          - { os: macos-14, name: macos, flag: --mac }
+          - { os: ubuntu-22.04, name: linux, flag: --linux }
+    runs-on: ${{ matrix.os }}
+    defaults: { run: { shell: bash } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt pyinstaller pillow
+      - name: Build the web app
+        working-directory: frontend
+        env: { NEXT_PUBLIC_API_URL: "http://localhost:8000" }
+        run: |
+          npm ci
+          npm run build
+      - name: Assemble web files
+        run: python desktop/package_web.py desktop/dist
+      - name: Build the local server
+        run: pyinstaller --noconfirm --distpath desktop/dist --workpath desktop/build desktop/mockview.spec
+      - name: Package the desktop app
+        working-directory: electron
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"   # unsigned builds (no paid certificates)
+        run: |
+          npm install --no-audit --no-fund
+          npx electron-builder ${{ matrix.flag }} --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mockview-${{ matrix.name }}
+          path: |
+            electron/dist/*.exe
+            electron/dist/*.dmg
+            electron/dist/*.AppImage
+      - name: Attach to the Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            electron/dist/*.exe
+            electron/dist/*.dmg
+            electron/dist/*.AppImage
