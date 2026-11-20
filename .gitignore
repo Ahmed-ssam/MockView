@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+__pycache__/
+*.pyc
+*.db
+.pytest_cache/
+data/
+desktop/dist/
+desktop/build/
+electron/dist/
