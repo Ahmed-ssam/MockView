@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mv-navy: #0b1f3b;
+  --mv-slate: #376a90;
+  --mv-soft: #8fb6d9;
+  --mv-sand: #f4c992;
+  --mv-cream: #f8f4ec;
+}
+
+body {
+  @apply bg-cream text-navy font-sans antialiased;
+}
+h1, h2, h3 { @apply font-serif text-navy; }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-control bg-navy px-5 py-2.5 text-sm font-medium text-cream
+           shadow-card transition hover:bg-navy-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-blue;
+  }
+  .btn-cta {
+    @apply inline-flex items-center gap-2 rounded-control bg-sand px-5 py-2.5 text-sm font-semibold text-navy
+           transition hover:bg-sand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-control border border-navy px-5 py-2.5 text-sm font-medium text-navy
+           transition hover:bg-navy hover:text-cream;
+  }
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-white px-3 py-1 text-xs font-medium text-slate-blue;
+  }
+  .card { @apply rounded-card border border-border bg-white shadow-card; }
+}
