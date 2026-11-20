@@ -1,0 +1,85 @@
+{
+  "name": "mockview-desktop",
+  "productName": "MockView",
+  "version": "1.0.0",
+  "description": "MockView: practice technical interviews out loud with an AI interviewer.",
+  "author": "MockView",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "app.mockview.desktop",
+    "productName": "MockView",
+    "copyright": "MockView",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "build/icon.png"
+    ],
+    "extraResources": [
+      {
+        "from": "../desktop/dist/server",
+        "to": "server"
+      },
+      {
+        "from": "../desktop/dist/web",
+        "to": "web"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "MockView",
+      "installerIcon": "build/setup-icon.ico",
+      "uninstallerIcon": "build/setup-icon.ico",
+      "installerHeaderIcon": "build/setup-icon.ico",
+      "installerSidebar": "build/wizard-large.bmp",
+      "uninstallerSidebar": "build/wizard-large.bmp",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true,
+      "artifactName": "MockView_installer.${ext}"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "build/icon.icns",
+      "category": "public.app-category.education",
+      "identity": null,
+      "artifactName": "MockView.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "build/icon.png",
+      "category": "Education",
+      "artifactName": "MockView.${ext}"
+    }
+  }
+}

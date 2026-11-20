@@ -1,0 +1,9 @@
+{
+  "name": "mockview-e2e",
+  "private": true,
+  "description": "Browser end-to-end and accessibility tests. Run with ./run.sh (see README).",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "playwright": "^1.48.0"
+  }
+}
