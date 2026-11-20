@@ -45,4 +45,4 @@ jobs:
         working-directory: e2e
       - run: npx playwright install --with-deps chromium
         working-directory: e2e
-      - run: ./e2e/run.sh
+      - run: bash e2e/run.sh
